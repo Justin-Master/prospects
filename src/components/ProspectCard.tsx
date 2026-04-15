@@ -41,10 +41,11 @@ export const ProspectCard: React.FC<ProspectCardProps> = ({ prospect, onEdit, on
           </div>
         </div>
         <DropdownMenu>
-          <DropdownMenuTrigger asChild onClick={(e) => e.stopPropagation()}>
-            <Button variant="ghost" size="icon" className="h-8 w-8">
-              <MoreVertical className="h-4 w-4" />
-            </Button>
+          <DropdownMenuTrigger 
+            render={<Button variant="ghost" size="icon" className="h-8 w-8" />}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <MoreVertical className="h-4 w-4" />
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <DropdownMenuItem onClick={(e) => { e.stopPropagation(); onEdit(prospect); }}>

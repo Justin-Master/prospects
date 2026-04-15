@@ -62,6 +62,27 @@ Si vous préférez l'interface graphique :
 3. Si demandé, autorisez l'installation depuis des "sources inconnues".
 4. L'application **Prospéctor** sera installée et prête à l'emploi !
 
+## 🛠️ Dépannage (Troubleshooting)
+
+### Erreur : "Invalid or corrupt jarfile gradle-wrapper.jar"
+Si vous rencontrez cette erreur lors de la commande `npm run cap:build`, cela signifie que le fichier binaire de Gradle a été corrompu lors du téléchargement du fichier ZIP.
+
+**Solution :**
+Supprimez le dossier `android` et recréez-le avec Capacitor :
+```bash
+# 1. Supprimez le dossier android corrompu (sous Windows)
+rmdir /s /q android
+# (ou sous Mac/Linux : rm -rf android)
+
+# 2. Recréez le projet Android
+npx cap add android
+
+# 3. Relancez le build
+npm run cap:build
+```
+
+---
+
 ## 🛠️ Configuration Technique (Déjà faite)
 
 L'application est déjà configurée avec :

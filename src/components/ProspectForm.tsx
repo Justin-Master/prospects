@@ -139,17 +139,19 @@ export function ProspectForm({ initialData, onSubmit, onCancel }: ProspectFormPr
       <div className="space-y-2">
         <Label>Date de rendez-vous</Label>
         <Popover>
-          <PopoverTrigger asChild>
-            <Button
-              variant="outline"
-              className={cn(
-                "w-full justify-start text-left font-normal",
-                !appointmentDate && "text-muted-foreground"
-              )}
-            >
-              <CalendarIcon className="mr-2 h-4 w-4" />
-              {appointmentDate ? format(appointmentDate, "PPP", { locale: fr }) : <span>Choisir une date</span>}
-            </Button>
+          <PopoverTrigger 
+            render={
+              <Button
+                variant="outline"
+                className={cn(
+                  "w-full justify-start text-left font-normal",
+                  !appointmentDate && "text-muted-foreground"
+                )}
+              />
+            }
+          >
+            <CalendarIcon className="mr-2 h-4 w-4" />
+            {appointmentDate ? format(appointmentDate, "PPP", { locale: fr }) : <span>Choisir une date</span>}
           </PopoverTrigger>
           <PopoverContent className="w-auto p-0">
             <Calendar
