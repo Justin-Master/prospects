@@ -1,0 +1,6 @@
+{
+  "name": "Prospéctor - Gestion de Prospects",
+  "description": "Une application professionnelle pour collecter, organiser et recontacter vos prospects commerciaux avec suivi GPS et intégration WhatsApp.",
+  "requestFramePermissions": ["geolocation", "notifications"],
+  "majorCapabilities": []
+}
