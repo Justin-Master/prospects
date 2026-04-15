@@ -1,5 +1,14 @@
 # Prospéctor - Guide de Build Android (.apk)
 
+## 🌐 Application en ligne
+
+Vous pouvez accéder et utiliser l'application directement en ligne depuis n'importe quel navigateur via ce lien :
+👉 **[Ouvrir Prospéctor en ligne](https://ais-pre-l5t7thqr7ovapznw5rf7vl-130501285455.europe-west2.run.app)**
+
+*(Note : Vous pouvez également installer cette version web sur votre téléphone, voir la section "Alternative : PWA" en bas de page).*
+
+---
+
 Cette application est conçue pour être utilisée comme une application mobile native sur Android grâce à **Capacitor**.
 
 ## 🚀 Comment obtenir le fichier .apk

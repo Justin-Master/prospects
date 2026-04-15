@@ -58,8 +58,10 @@ export function ProspectList({ prospects, onEdit, onDelete, onView }: ProspectLi
           />
         </div>
         <DropdownMenu>
-          <DropdownMenuTrigger render={<Button variant="outline" size="icon" className="shrink-0 border-gray-200" />}>
-            <ArrowUpDown className="h-4 w-4" />
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" size="icon" className="shrink-0 border-gray-200">
+              <ArrowUpDown className="h-4 w-4" />
+            </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end" className="w-56">
             <DropdownMenuLabel>Trier par</DropdownMenuLabel>
